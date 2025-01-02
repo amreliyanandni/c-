@@ -1,0 +1,29 @@
+#include<iostream.h>
+#include<conio.h>
+class base
+{
+ public:
+ base()
+ {
+  cout<<"good morningfrom parent class..";
+ }
+ virtual void display()=0;
+};
+class derived:base
+{
+ public:
+ derived()
+ {
+  cout<<"\n good morning from child class..";
+ }
+ void display()
+ {
+  cout<<"\n good morning byee from derived display..";
+ }
+};
+void main()
+{
+ derived d1;
+ D1.display();
+ getch();
+}
